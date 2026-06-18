@@ -1,6 +1,6 @@
 import json
 import os
-from github_pr import get_pr_changes, post_review_comment
+from tools.github_pr import get_pr_changes, post_review_comment
 
 def lambda_handler(event, context):
     """

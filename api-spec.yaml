@@ -1,0 +1,18 @@
+openapi: 3.0.0
+info:
+  title: CodeBuddy Agent Webhook API
+  version: 1.0.0
+  description: GitHub PR 이벤트를 수신하는 웹훅 API 명세서
+paths:
+  /webhook:
+    post:
+      summary: GitHub Webhook 수신
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: 성공적으로 이벤트를 처리함
